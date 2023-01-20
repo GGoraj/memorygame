@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ggoraj.memorygame.gametests.GameTests" tests="11" skipped="0" failures="0" errors="0" timestamp="2023-01-19T10:00:38" hostname="orion" time="0.19">
+  <properties/>
+  <testcase name="setMatch_False_GivenPositionsExceedMatrixLength()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.14"/>
+  <testcase name="setMatch_True_AllGivenDataIsCorrectAndMatch()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.004"/>
+  <testcase name="getBoardReturns2DimentionalArray()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.004"/>
+  <testcase name="setMatch_True_PositionsCorrectMatchMadeWasGuessedSetToTrue()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.004"/>
+  <testcase name="isGameFinished_False_NotAllCellsInBoardAreGuessed()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.004"/>
+  <testcase name="eachBoardHasUniqueId()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.003"/>
+  <testcase name="setMatch_False_PositionsArrayTooShort()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.003"/>
+  <testcase name="eachCellInBoardHasAPictureAssigned()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.003"/>
+  <testcase name="isGameFinished_True_allCellsInBoardAreGuessed()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.004"/>
+  <testcase name="setMatch_False_PositionsArrayTooLong()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.004"/>
+  <testcase name="initialScoreIsZero()" classname="com.ggoraj.memorygame.gametests.GameTests" time="0.003"/>
+  <system-out><![CDATA[11:00:34.903 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [GameTests]: using SpringBootContextLoader
+11:00:34.908 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.ggoraj.memorygame.gametests.GameTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+11:00:34.909 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ggoraj.memorygame.gametests.GameTests]: GameTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+11:00:34.934 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using ContextCustomizers for test class [GameTests]: [DisableObservabilityContextCustomizer, PropertyMappingContextCustomizer, Customizer, ExcludeFilterContextCustomizer, DuplicateJsonObjectContextCustomizer, MockitoContextCustomizer, TestRestTemplateContextCustomizer]
+11:00:34.987 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/home/quenar/Downloads/memorygame/build/classes/java/main/com/ggoraj/memorygame/MemorygameApplication.class]
+11:00:34.989 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ggoraj.memorygame.MemorygameApplication for test class com.ggoraj.memorygame.gametests.GameTests
+11:00:35.069 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners for test class [GameTests]: [ServletTestExecutionListener, DirtiesContextBeforeModesTestExecutionListener, ApplicationEventsTestExecutionListener, MockitoTestExecutionListener, DependencyInjectionTestExecutionListener, DirtiesContextTestExecutionListener, TransactionalTestExecutionListener, SqlScriptsTestExecutionListener, EventPublishingTestExecutionListener, RestDocsTestExecutionListener, MockRestServiceServerResetTestExecutionListener, MockMvcPrintOnlyOnFailureTestExecutionListener, WebDriverTestExecutionListener, MockWebServiceServerTestExecutionListener, ResetMocksTestExecutionListener]
+11:00:35.070 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: class [GameTests], class annotated with @DirtiesContext [false] with mode [null]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.1)
+
+2023-01-19T11:00:35.360+01:00  INFO 129315 --- [    Test worker] c.ggoraj.memorygame.gametests.GameTests  : Starting GameTests using Java 19.0.1 with PID 129315 (started by quenar in /home/quenar/Downloads/memorygame)
+2023-01-19T11:00:35.361+01:00  INFO 129315 --- [    Test worker] c.ggoraj.memorygame.gametests.GameTests  : No active profile set, falling back to 1 default profile: "default"
+2023-01-19T11:00:35.951+01:00  INFO 129315 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-01-19T11:00:36.065+01:00  INFO 129315 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 2 JPA repository interfaces.
+2023-01-19T11:00:36.249+01:00  INFO 129315 --- [    Test worker] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e370a7f2-3401-389f-a8fb-e1fa8020a38d
+2023-01-19T11:00:36.473+01:00  INFO 129315 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-01-19T11:00:36.687+01:00  INFO 129315 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@65bd19bf
+2023-01-19T11:00:36.689+01:00  INFO 129315 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-01-19T11:00:36.725+01:00  INFO 129315 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-01-19T11:00:36.758+01:00  INFO 129315 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.6.Final
+2023-01-19T11:00:36.900+01:00  WARN 129315 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000021: Encountered deprecated setting [javax.persistence.sharedCache.mode], use [jakarta.persistence.sharedCache.mode] instead
+2023-01-19T11:00:37.025+01:00  INFO 129315 --- [    Test worker] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-01-19T11:00:37.148+01:00  WARN 129315 --- [    Test worker] org.hibernate.id.UUIDHexGenerator        : HHH000409: Using org.hibernate.id.UUIDHexGenerator which does not generate IETF RFC 4122 compliant UUID values; consider using org.hibernate.id.UUIDGenerator instead
+2023-01-19T11:00:37.579+01:00  INFO 129315 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-01-19T11:00:37.586+01:00  INFO 129315 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-01-19T11:00:37.943+01:00  WARN 129315 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-01-19T11:00:38.341+01:00  INFO 129315 --- [    Test worker] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2023-01-19T11:00:38.431+01:00  WARN 129315 --- [    Test worker] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-01-19T11:00:38.453+01:00  INFO 129315 --- [    Test worker] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2023-01-19T11:00:38.582+01:00  INFO 129315 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2023-01-19T11:00:38.588+01:00  INFO 129315 --- [    Test worker] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2023-01-19T11:00:38.623+01:00  INFO 129315 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2023-01-19T11:00:38.628+01:00  INFO 129315 --- [    Test worker] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-01-19T11:00:38.638+01:00  INFO 129315 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1674122438637 with initial instances count: 0
+2023-01-19T11:00:38.641+01:00  INFO 129315 --- [    Test worker] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application MEMORYGAME-SERVICE with eureka with status UP
+2023-01-19T11:00:38.642+01:00  INFO 129315 --- [    Test worker] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1674122438642, current=UP, previous=STARTING]
+2023-01-19T11:00:38.643+01:00  INFO 129315 --- [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_MEMORYGAME-SERVICE/192.168.1.77:memorygame-service:5551: registering service...
+2023-01-19T11:00:38.651+01:00  INFO 129315 --- [    Test worker] c.ggoraj.memorygame.gametests.GameTests  : Started GameTests in 3.536 seconds (process running for 4.451)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
